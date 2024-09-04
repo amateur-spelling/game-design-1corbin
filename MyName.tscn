@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://crpiyflpbkcm4"]
+
+[ext_resource type="Script" path="res://MyName.gd" id="1_q3crv"]
+[ext_resource type="Theme" uid="uid://bqv6tifw6myqj" path="res://largefront.tres" id="2_joy5i"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q3crv")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 37.0
+offset_right = 862.0
+offset_bottom = 263.0
+theme = ExtResource("2_joy5i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BnShow" type="Button" parent="."]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 422.0
+offset_right = 233.0
+offset_bottom = 612.0
+theme = ExtResource("2_joy5i")
+text = "Show"
+
+[node name="BnClear" type="Button" parent="."]
+offset_left = 438.0
+offset_top = 422.0
+offset_right = 644.0
+offset_bottom = 612.0
+theme = ExtResource("2_joy5i")
+text = "Clear"
+
+[node name="BnExit" type="Button" parent="."]
+offset_left = 847.0
+offset_top = 427.0
+offset_right = 1053.0
+offset_bottom = 617.0
+theme = ExtResource("2_joy5i")
+text = "Exit"
+
+[connection signal="pressed" from="BnShow" to="." method="_on_bn_show_pressed"]
+[connection signal="pressed" from="BnClear" to="." method="_on_bn_clear_pressed"]
+[connection signal="pressed" from="BnExit" to="." method="_on_bn_exit_pressed"]
