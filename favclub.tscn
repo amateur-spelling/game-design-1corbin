@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3rt6fdukaf6u"]
+
+[ext_resource type="Script" path="res://favclub.gd" id="1_h3bkf"]
+[ext_resource type="Theme" uid="uid://bqv6tifw6myqj" path="res://largefront.tres" id="2_o2n4n"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h3bkf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 40.0
+offset_right = 1041.0
+offset_bottom = 373.0
+theme = ExtResource("2_o2n4n")
+
+[node name="BnShow" type="Button" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 410.0
+offset_right = 256.0
+offset_bottom = 637.0
+theme = ExtResource("2_o2n4n")
+text = "Show"
+
+[node name="BnClear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 417.0
+offset_right = 658.0
+offset_bottom = 638.0
+theme = ExtResource("2_o2n4n")
+text = "Clear"
+
+[node name="BnExit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 820.0
+offset_top = 412.0
+offset_right = 1064.0
+offset_bottom = 642.0
+theme = ExtResource("2_o2n4n")
+text = "Exit"
+
+[connection signal="pressed" from="BnShow" to="." method="_on_bn_show_pressed"]
+[connection signal="pressed" from="BnClear" to="." method="_on_bn_clear_pressed"]
+[connection signal="pressed" from="BnExit" to="." method="_on_bn_exit_pressed"]
