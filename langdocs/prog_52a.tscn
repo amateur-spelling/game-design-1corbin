@@ -1,0 +1,99 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgapfaf32clj2"]
+
+[ext_resource type="Theme" uid="uid://bqv6tifw6myqj" path="res://largefront.tres" id="1_180a1"]
+[ext_resource type="Script" path="res://langdocs/prog_52a.gd" id="1_jb53n"]
+
+[node name="Prog_52a" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.347
+offset_left = 6.0
+offset_top = -4.0
+offset_right = 6.0
+offset_bottom = -3.85608
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jb53n")
+
+[node name="Length" type="Label" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 15.0
+offset_right = 208.0
+offset_bottom = 82.0
+theme = ExtResource("1_180a1")
+text = "Length:"
+
+[node name="Width" type="Label" parent="."]
+offset_left = 55.0
+offset_top = 131.0
+offset_right = 233.0
+offset_bottom = 198.0
+theme = ExtResource("1_180a1")
+text = "Width:"
+
+[node name="Area" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 226.0
+offset_right = 1139.0
+offset_bottom = 379.0
+theme = ExtResource("1_180a1")
+text = "Area"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Perimeter" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 365.0
+offset_right = 1141.0
+offset_bottom = 518.0
+theme = ExtResource("1_180a1")
+text = "Perimeter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="txtLen" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 6.0
+offset_right = 498.0
+offset_bottom = 106.0
+theme = ExtResource("1_180a1")
+
+[node name="txtWid" type="LineEdit" parent="."]
+offset_left = 225.0
+offset_top = 120.0
+offset_right = 495.0
+offset_bottom = 220.0
+theme = ExtResource("1_180a1")
+
+[node name="BnCal" type="Button" parent="."]
+layout_mode = 0
+offset_left = 562.0
+offset_top = 31.0
+offset_right = 784.0
+offset_bottom = 188.0
+theme = ExtResource("1_180a1")
+text = "Calculate"
+
+[node name="BnClear" type="Button" parent="."]
+offset_left = 888.0
+offset_top = 34.0
+offset_right = 1106.0
+offset_bottom = 191.0
+theme = ExtResource("1_180a1")
+text = "Clear"
+
+[node name="BnExit" type="Button" parent="."]
+offset_left = 31.0
+offset_top = 482.0
+offset_right = 249.0
+offset_bottom = 639.0
+theme = ExtResource("1_180a1")
+text = "Exit
+"
+
+[connection signal="pressed" from="BnCal" to="." method="_on_bn_cal_pressed"]
+[connection signal="pressed" from="BnClear" to="." method="_on_bn_clear_pressed"]
+[connection signal="pressed" from="BnExit" to="." method="_on_bn_exit_pressed"]

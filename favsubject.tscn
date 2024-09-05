@@ -33,6 +33,7 @@ theme = ExtResource("2_qpxyd")
 text = "Show"
 
 [node name="BnClear" type="Button" parent="."]
+layout_mode = 0
 offset_left = 405.0
 offset_top = 421.0
 offset_right = 617.0
@@ -41,6 +42,7 @@ theme = ExtResource("2_qpxyd")
 text = "Clear"
 
 [node name="BnExit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 787.0
 offset_top = 419.0
 offset_right = 999.0
