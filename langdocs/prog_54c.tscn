@@ -19,17 +19,18 @@ offset_top = 201.0
 offset_right = 355.0
 offset_bottom = 332.0
 theme = ExtResource("2_hf5r8")
-text = "here"
+text = "Area"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="txt2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 27.0
 offset_top = 345.0
 offset_right = 358.0
 offset_bottom = 476.0
 theme = ExtResource("2_hf5r8")
-text = "here"
+text = "Circumference"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -53,6 +54,7 @@ theme = ExtResource("2_hf5r8")
 text = "Calulate"
 
 [node name="BnClear" type="Button" parent="."]
+layout_mode = 0
 offset_left = 487.0
 offset_top = 230.0
 offset_right = 1060.0
@@ -62,6 +64,7 @@ text = "Clear
 "
 
 [node name="BnExit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 495.0
 offset_top = 412.0
 offset_right = 1068.0

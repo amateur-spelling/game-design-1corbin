@@ -1,0 +1,81 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6dywvphwhq8p"]
+
+[ext_resource type="Script" path="res://langdocs/prog_82a.gd" id="1_djjys"]
+[ext_resource type="Theme" uid="uid://bqv6tifw6myqj" path="res://largefront.tres" id="2_eqfkn"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_djjys")
+
+[node name="priceSh" type="Label" parent="."]
+layout_mode = 0
+offset_left = 334.0
+offset_top = 397.0
+offset_right = 638.0
+offset_bottom = 551.0
+theme = ExtResource("2_eqfkn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="price" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 395.0
+offset_right = 335.0
+offset_bottom = 549.0
+theme = ExtResource("2_eqfkn")
+text = "Fine"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="speed_limit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 20.0
+offset_right = 390.0
+offset_bottom = 155.0
+theme = ExtResource("2_eqfkn")
+placeholder_text = "Speed limit"
+alignment = 1
+
+[node name="vehicle_speed" type="LineEdit" parent="."]
+offset_left = 47.0
+offset_top = 183.0
+offset_right = 400.0
+offset_bottom = 318.0
+theme = ExtResource("2_eqfkn")
+placeholder_text = "Vehicle Speed"
+alignment = 1
+
+[node name="BnCal" type="Button" parent="."]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 21.0
+offset_right = 1113.0
+offset_bottom = 209.0
+theme = ExtResource("2_eqfkn")
+text = "Calulate"
+
+[node name="BnClear" type="Button" parent="."]
+offset_left = 743.0
+offset_top = 240.0
+offset_right = 1119.0
+offset_bottom = 428.0
+theme = ExtResource("2_eqfkn")
+text = "Clear"
+
+[node name="BnExit" type="Button" parent="."]
+offset_left = 747.0
+offset_top = 454.0
+offset_right = 1126.0
+offset_bottom = 642.0
+theme = ExtResource("2_eqfkn")
+text = "Exit"
+
+[connection signal="pressed" from="BnCal" to="." method="_on_bn_cal_pressed"]
+[connection signal="pressed" from="BnClear" to="." method="_on_bn_clear_pressed"]
+[connection signal="pressed" from="BnExit" to="." method="_on_bn_exit_pressed"]
