@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr5ma7uq2xiqc"]
+
+[ext_resource type="Script" path="res://prog_88a.gd" id="1_y3sd2"]
+[ext_resource type="Theme" uid="uid://bqv6tifw6myqj" path="res://largefront.tres" id="2_xe4kg"]
+
+[node name="prog_88a" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y3sd2")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 111.0
+offset_right = 1088.0
+offset_bottom = 575.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_right = 435.0
+offset_bottom = 98.0
+theme = ExtResource("2_xe4kg")
+alignment = 1
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+offset_left = 714.0
+offset_top = -3.0
+offset_right = 1149.0
+offset_bottom = 95.0
+theme = ExtResource("2_xe4kg")
+alignment = 1
+
+[node name="BnCal" type="Button" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 514.0
+offset_right = 369.0
+offset_bottom = 626.0
+theme = ExtResource("2_xe4kg")
+text = "Calulate"
+
+[node name="BnCl" type="Button" parent="."]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 521.0
+offset_right = 750.0
+offset_bottom = 633.0
+theme = ExtResource("2_xe4kg")
+text = "Clear"
+
+[node name="BnEx" type="Button" parent="."]
+layout_mode = 0
+offset_left = 769.0
+offset_top = 517.0
+offset_right = 1118.0
+offset_bottom = 629.0
+theme = ExtResource("2_xe4kg")
+text = "Exit"
+
+[connection signal="pressed" from="BnCal" to="." method="_on_bn_cal_pressed"]
+[connection signal="pressed" from="BnCl" to="." method="_on_bn_cl_pressed"]
+[connection signal="pressed" from="BnEx" to="." method="_on_bn_ex_pressed"]
